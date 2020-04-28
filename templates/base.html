@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- bootstrap 4.4.1 -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <!-- start point of navbar section -->
+    {% include 'navbar.html' %}
+    <!-- this the end of navbar section -->
+    {%block content%}
+    <!-- here we will write our content -->
+    {%endblock%}
+
+
+    <!-- footer section start -->
+    {%include 'footer.html' %}
+    <!-- footer section end -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js//bootstrap.min.js"></script>
+</body>
+
+</html>

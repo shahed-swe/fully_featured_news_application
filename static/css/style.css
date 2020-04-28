@@ -6,6 +6,11 @@ section {
     height: 520px;
 }
 
+.news-section,
+.main-news {
+    margin-top: 30px;
+}
+
 
 /* for small devices */
 
