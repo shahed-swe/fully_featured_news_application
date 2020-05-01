@@ -34,28 +34,25 @@
 							Log in
 						</a>
                 </div>
-
+            {% for i in link %}
                 <div class="right-topbar">
-                    <a href="#">
+                    <a href="{{i.fb}}">
                         <span class="fab fa-facebook-f"></span>
                     </a>
 
-                    <a href="#">
+                    <a href="{{i.tw}}">
                         <span class="fab fa-twitter"></span>
                     </a>
 
-                    <a href="#">
-                        <span class="fab fa-pinterest-p"></span>
+                    <a href="{{i.ln}}">
+                        <span class="fab fa-linkedin-in"></span>
                     </a>
 
-                    <a href="#">
-                        <span class="fab fa-vimeo-v"></span>
-                    </a>
-
-                    <a href="#">
+                    <a href="{{i.yt}}">
                         <span class="fab fa-youtube"></span>
                     </a>
                 </div>
+            {% endfor %}
             </div>
         </div>
 

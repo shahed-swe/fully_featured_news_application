@@ -1,5 +1,6 @@
 {
     "python.pythonPath": "C:\\Users\\Shahed\\Desktop\\Django Unchained\\public\\Scripts\\python.exe",
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": false
+    "python.linting.enabled": false,
+    "python.formatting.provider": "black"
 }

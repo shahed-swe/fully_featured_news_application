@@ -12,13 +12,14 @@
                     </div>
 
                     <div>
+                    {% for i in site%}
                         <p class="f1-s-1 cl11 p-b-16">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor magna eget elit efficitur, at accumsan sem placerat. Nulla tellus libero, mattis nec molestie at, facilisis ut turpis. Vestibulum dolor metus, tincidunt eget odio
+                            {{i.about1}}
                         </p>
-
                         <p class="f1-s-1 cl11 p-b-16">
-                            Any questions? Call us on (+1) 96 716 6879
+                            {{i.about2}}
                         </p>
+                    {% endfor %}
 
                         <div class="p-t-15">
                             <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
@@ -30,11 +31,7 @@
                             </a>
 
                             <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-                                <span class="fab fa-pinterest-p"></span>
-                            </a>
-
-                            <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-                                <span class="fab fa-vimeo-v"></span>
+                                <span class="fab fa-linkedin-in"></span>
                             </a>
 
                             <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
