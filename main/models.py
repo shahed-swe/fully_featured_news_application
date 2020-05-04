@@ -11,12 +11,13 @@ class Main(models.Model):
     yt = models.CharField(max_length = 100,null=True)
 
     def __str__(self):
-        return self.name
+        return self.name + " | " + str(self.pk)
 
 class fooAbout(models.Model):
     about1 = models.TextField()
     about2 = models.TextField()
+    telephone = models.TextField(default="(+880)")
 
     def __str__(self):
-        return self.about1 + self.about2
+        return "About No | " + str(self.pk)
     
