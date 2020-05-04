@@ -1,0 +1,20 @@
+{% load static %}
+
+<!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
+<script src="{% static 'back/js/vendor/jquery.min.js'%}"></script>
+<script src="{% static 'back/js/vendor/bootstrap.min.js'%}"></script>
+<script src="{% static 'back/js/plugins.js'%}"></script>
+<script src="{% static 'back/js/app.js'%}"></script>
+
+<!-- Google Maps API Key (you will have to obtain a Google Maps API key to use Google Maps) -->
+<!-- For more info please have a look at https://developers.google.com/maps/documentation/javascript/get-api-key#key -->
+<script src="https://maps.googleapis.com/maps/api/js?key="></script>
+<script src="{% static 'back/js/helpers/gmaps.min.js'%}"></script>
+
+<!-- Load and execute javascript code used only in this page -->
+<script src="{% static 'back/js/pages/index.js'%}"></script>
+<script>
+    $(function() {
+        Index.init();
+    });
+</script>
