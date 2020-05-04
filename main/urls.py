@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^about/$', views.about,name='about'),
     url(r'^json/$', views.json_data,name='json'),
+    url(r'^panel/$',views.panel, name='panel'),
 ]

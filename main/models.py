@@ -20,4 +20,11 @@ class fooAbout(models.Model):
 
     def __str__(self):
         return "About No | " + str(self.pk)
-    
+
+class about_main(models.Model):
+    about_first = models.TextField(default="-")
+    about_second = models.TextField(default="-")
+    about_third = models.TextField(default="-")
+
+    def __str__(self):
+        return (self.about_first[0:10]) + " | " + str(self.pk)
