@@ -5,7 +5,7 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^$', views.home),
-    url(r'^about/$', views.about),
-    url(r'^json/$', views.json_data),
+    url(r'^$', views.home, name='home'),
+    url(r'^about/$', views.about,name='about'),
+    url(r'^json/$', views.json_data,name='json'),
 ]

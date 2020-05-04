@@ -3,13 +3,15 @@ from django.http import JsonResponse
 # get_objeect_or_404 --> to raise the error if not found
 # redirect() --> used to redirect our web page
 from .models import Main,fooAbout
+from news.models import News
 # Create your views here.
 
 def home(request):
     # sending dynamic data of title and footer about section
     qrr = fooAbout.objects.all()
     links = Main.objects.all()
-    return render(request, 'home.html', {"title":"Home","site": qrr,"link":links})
+    new_news = News.objects.all()
+    return render(request, 'home.html', {"title":"Home","site": qrr,"link":links,"news":new_news})
 
 def about(request):
     # sending dynamic data of title and footer about section
